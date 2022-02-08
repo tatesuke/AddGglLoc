@@ -6,17 +6,25 @@ AddGoogleLocation、グーグルのロケーション履歴ファイルをもと
 
 ## 使い方
 
-### 依存モジュールダウンロード
-
 Python3の実行環境が必要です。まずはPython3を導入してください。  
-https://docs.python.org/ja/3/using/index.html
+
+* https://docs.python.org/ja/3/using/index.html
+
+### クローン
+
+まずこのプロジェクトをクローンしてください。
+
+```
+git clone https://github.com/tatesuke/AddGglLoc.git
+```
 
 
+### 依存モジュールダウンロード
 次に以下コマンドで依存ライブラリをダウンロードしてください。
 （venvを利用していますが必須ではありません。意味を理解できる方は必ずしもvenvを利用する必要はありません）
 
 ```
-cd このプロジェクトのディレクトリ
+cd AddGglLoc
 python3 -m venv .venv
 .\.venv\Scripts\activate
 pip install -r requirements.txt
