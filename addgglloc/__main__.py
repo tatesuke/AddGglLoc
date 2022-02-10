@@ -17,6 +17,9 @@ def _main() -> None:
         logger.info(f"args:{vars(args)}")
 
         addgglloc = AddGglLoc()
+        addgglloc.googleLocationLogDir = args.google
+        addgglloc.jpegInputDir = args.jpeg
+        addgglloc.outputDir = args.output
         addgglloc.execute()
     except AddGglLocException as e:
         logger.error(f"[ABORT] {e.message}")
